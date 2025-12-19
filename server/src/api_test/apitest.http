@@ -1,0 +1,20 @@
+### Register
+POST http://127.0.0.1:8000/api/brawlers/register
+Content-Type: application/json
+
+{
+  "username": "testeklmklr_99",
+  "password": "P@ssw0rd",
+  "display_name": "Tester ROV"
+}
+
+### Login
+POST http://127.0.0.1:8000/api/authentication/login
+Content-Type: application/json
+
+{
+    "username": "tester_99",
+    "password": "P@ssw0rd"
+}
+
+### create new mission
