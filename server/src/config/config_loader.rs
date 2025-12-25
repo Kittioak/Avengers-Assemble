@@ -56,11 +56,17 @@
         let life_time_days = std::env::var("JWT_LIFE_TIME_DAYS")?
             .parse::<i64>()?;
 
+<<<<<<< HEAD
         Ok(JwtEnv {
             secret,
             life_time_days,
         })
     }
+=======
+pub fn get_cloundinary_env() -> Result<CloudinaryEnv> {
+    
+    dotenvy::dotenv().ok();
+>>>>>>> a965eb0 (update)
 
     pub fn get_cloundinary_env() -> Result<CloudinaryEnv> {
         dotenvy::dotenv().ok();
