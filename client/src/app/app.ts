@@ -2,7 +2,6 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from "./navbar/navbar";
 
-
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, Navbar],
@@ -10,5 +9,5 @@ import { Navbar } from "./navbar/navbar";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Avengers-Assembleclient');
+  protected readonly title = signal('client');
 }
