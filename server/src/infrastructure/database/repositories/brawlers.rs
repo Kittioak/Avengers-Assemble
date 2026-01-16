@@ -33,7 +33,7 @@ impl BrawlerRepository for BrawlerPostgres {
             .values(&register_brawler_entity)
             .returning(brawlers::id)
             .get_result::<i32>(&mut connection)?;
-
+        
         Ok(result)
     }
 
